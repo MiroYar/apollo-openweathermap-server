@@ -20,7 +20,8 @@ http://localhost:400
 getWeather(cityName: String, countryCode: String) {}
 ```
 
-## Схема тела запроса (в комментариях ожидаемый тип ответа)
+## Схема тела запроса
+В комментариях ожидаемый тип ответа
 ```js
 getWeather(cityName: String, countryCode: String) {
   cod // String
