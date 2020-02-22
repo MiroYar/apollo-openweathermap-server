@@ -1,5 +1,5 @@
 # apollo-openweathermap-server
-Легкий [Apollo](https://www.apollographql.com/) сервер для получения данных с сайта погоды [openweathermap.org](openweathermap.org).
+Легкий [Apollo](https://www.apollographql.com/docs/apollo-server/) сервер для получения данных с сайта погоды [openweathermap.org](openweathermap.org) при рахработке приложений с системой запрсов данных на основе [Apollo](https://www.apollographql.com/docs/react/) клиент.
 
 ## Использование
 Скачать, пройти в командной строке в дирректорию сервера и набрать команду для установки всех зависимостей:
