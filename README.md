@@ -7,7 +7,7 @@ getWeather(cityName: String, countryCode: String)
 ```
 
 ## Схема тела запроса
-```scss
+```json
 {
   cod // String
   message // Float
