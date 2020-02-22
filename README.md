@@ -7,7 +7,7 @@ getWeather(cityName: String, countryCode: String)
 ```
 
 ## Схема тела запроса
-```json
+```php
 {
   cod // String
   message // Float
