@@ -1,6 +1,20 @@
 # apollo-openweathermap-server
 Легкий [Apollo](https://www.apollographql.com/) сервер для получения данных с сайта погоды [openweathermap.org](openweathermap.org).
 
+## Установка
+Скачать, пройти в командной строке в дирректорию сервера и набрать команду:
+```
+npm install
+```
+Для запуска проекта набрать команду:
+```
+npm start
+```
+Точка подключения после запуска сервера:
+```
+http://localhost:400
+```
+
 ## Query запрос
 ```js
 getWeather(cityName: String, countryCode: String)
