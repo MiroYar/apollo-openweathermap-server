@@ -2,12 +2,12 @@
 Легкий [Apollo](https://www.apollographql.com/) сервер для получения данных с сайта погоды [openweathermap.org](openweathermap.org).
 
 ## Query запрос
-```
+```php
 getWeather(cityName: String, countryCode: String)
 ```
 
 ## Схема тела запроса
-```
+```js
 {
   cod // String
   message // Float
