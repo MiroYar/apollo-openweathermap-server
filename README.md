@@ -15,9 +15,9 @@ npm start
 http://localhost:400
 ```
 
-## Query запрос
+## Query запросы
 ```js
-getWeather(cityName: String, countryCode: String)
+getWeather(cityName: String, countryCode: String) {}
 ```
 
 ## Схема тела запроса
