@@ -1,0 +1,105 @@
+const { gql } = require('apollo-server');
+
+const typeDefs = gql`
+    type ForecastWeather {
+        cod: String
+        message: Float
+        cnt: Int
+        list: [List]
+        city: City
+        fahrenheit_avg: Float
+        celcius_avg: Float
+        kelvin_avg: Float
+        fahrenheit_max_avg: Float
+        celcius_max_avg: Float
+        kelvin_max_avg: Float
+        pressure_avg: Float
+        humidity_avg: Float
+        sea_level_avg: Float
+        pressure: [Float]
+        humidity: [Float]
+        temp_farenheit: [Float]
+        temp_celcius: [Float]
+        temp_kelvin: [Float]
+        sea_level: [Float]
+    }
+
+    type Forecast {
+        cod: String
+        message: Float
+        cnt: Int
+        city: City
+        list: [List]
+    }
+
+    type City {
+        id: ID
+        name: String
+        country: String
+        coord: Coord
+        population: Int
+        timezone: Int
+        sunrise: Int
+        sunset: Int
+    }
+
+    type Coord {
+        lat: Float
+        lon: Float
+    }
+
+    type List {
+        dt: Int
+        main: Main
+        weather: [Weather]
+        clouds: Clouds
+        wind: Wind
+        rain: Rain
+        sys: Sys
+        dt_txt: String
+    }
+
+    type Main {
+        temp: Float
+        feels_like: Float
+        temp_min: Float
+        temp_max: Float
+        temp_kf: Float
+        temp_f: Float
+        temp_c: Float
+        pressure: Float
+        sea_level: Float
+        grnd_level: Float
+        humidity: Int
+    }
+
+    type Weather {
+        id: ID
+        main: String
+        description: String
+        icon: String
+    }
+
+    type Clouds {
+        all: Int
+    }
+
+    type Wind {
+        speed: Float
+        deg: Float
+    }
+
+    type Rain {
+        h: Float
+    }
+
+    type Sys {
+        pod: String
+    }
+
+    type Query {
+        getWeather(cityName: String, countryCode: String): ForecastWeather
+    }
+`;
+
+module.exports = typeDefs;
