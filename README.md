@@ -20,7 +20,7 @@ http://localhost:4000
 const PORT = 4000;
 ```
 ### Сервер онлайн
-Также можно использовать развернутый онлайн сервер на [Codesandbox.io/](https://codesandbox.io/). В таком случае точка подключения к серверу:
+Также можно использовать развернутый онлайн сервер на [Codesandbox.io](https://codesandbox.io/). В таком случае точка подключения к серверу:
 ```
 https://ufrto.sse.codesandbox.io/
 ```
