@@ -18,7 +18,19 @@ const resolvers = {
                         ...weather.main,
                         temp_f: toFarenheit(weather.main.temp),
                         temp_c: toCelsius(weather.main.temp)
-                    }
+                    },
+                    rain: weather.rain
+                        ? {
+                              h1: weather.rain['1h'],
+                              h3: weather.rain['3h']
+                          }
+                        : null,
+                    snow: weather.snow
+                        ? {
+                              h1: weather.snow['1h'],
+                              h3: weather.snow['3h']
+                          }
+                        : null
                 })),
                 city,
                 fahrenheit_avg: toFarenheit(

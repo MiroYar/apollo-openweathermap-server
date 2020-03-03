@@ -55,6 +55,7 @@ const typeDefs = gql`
         clouds: Clouds
         wind: Wind
         rain: Rain
+        snow: Snow
         sys: Sys
         dt_txt: String
     }
@@ -90,7 +91,13 @@ const typeDefs = gql`
     }
 
     type Rain {
-        h: Float
+        h1: Float
+        h3: Float
+    }
+
+    type Snow {
+        h1: Float
+        h3: Float
     }
 
     type Sys {
