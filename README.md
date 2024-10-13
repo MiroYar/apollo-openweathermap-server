@@ -1,5 +1,8 @@
 # apollo-openweathermap-server
 
+> [!WARNING]
+> Проект находится в стадии доработки. В связи с этим представленное ниже описание является некорректным. Подробное описание причин переработки проекта, этапов и планов можно найти [здесь](./TASKS.md).
+
 Легкий [Apollo](https://www.apollographql.com/docs/apollo-server/) сервер для получения данных с сайта погоды [openweathermap.org](https://openweathermap.org/) при разработке приложений с системой запрсов данных на основе [Apollo](https://www.apollographql.com/docs/react/) клиент.
 
 ## Использование
