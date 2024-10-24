@@ -1,9 +1,15 @@
 # apollo-openweathermap-server
 
-Создание образа:
+#### Создание образа:
 
 ```
 docker build -t apollo-openweathermap-server .
+```
+
+#### Запуск контейнера:
+
+```
+docker run -p 4000:4000 --name apollo-server -d apollo-openweathermap-server
 ```
 
 > [!WARNING]
