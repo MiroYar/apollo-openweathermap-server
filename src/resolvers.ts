@@ -24,5 +24,8 @@ export const resolvers = {
 
       return cityData;
     },
+    echo: async (_: any, { message }: any) => {
+      return message;
+    },
   },
 };

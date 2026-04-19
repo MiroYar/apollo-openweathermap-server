@@ -269,5 +269,6 @@ export const typeDefs = `#graphql
   type Query {
     getWeather(lat: Float!, lon: Float!, apiKey: String!, units: String, lang: String): ForecastWeather
     getCityData(cityName: String!, apiKey: String!, stateCode: String, countryCode: String, limit: Int): [CityData]
+    echo(message: String!): String
   }
 `;
